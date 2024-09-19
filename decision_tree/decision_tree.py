@@ -21,7 +21,7 @@ class Node:
 
 def entropy(y):
     """
-    计算熵（Entropy）
+    计算熵(Entropy)
     - y: 标签
     """
     unique, counts = np.unique(y, return_counts=True)
@@ -45,7 +45,7 @@ def cal_info_gain(y, y_left, y_right):
 
 # Let's fix the issue by ensuring that info_gain is never None and info_gain_threshold has a proper default.
 
-class DecisionTreeFixed:
+class DecisionTree:
     def __init__(self, max_depth=None, info_gain_threshold=0.01):  # Set a default threshold
         self.max_depth = max_depth
         self.info_gain_threshold = info_gain_threshold
