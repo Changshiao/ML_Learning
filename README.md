@@ -11,7 +11,7 @@ learn to build a ML model step by step
 
 ## Decision tree
 
-基于信息增益进行分割的决策树。源码有详细注释，写的是屎山，看个乐就行了，预测结果也不尽人意
+基于信息增益进行分割的决策树。源码有详细注释，写的是屎山，看个乐就行，预测结果也不尽人意
 
 ## Random forest
 
