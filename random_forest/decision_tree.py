@@ -112,11 +112,8 @@ class DecisionTree:
         def _predict_sample(node, x):
             if node.value is not None:
                 return node.value
-            if x[node.feature_index] < node.threshold:
+            if x[node.feature_index] < node.threshold:  # 进到左子树
                 return _predict_sample(node.left, x)
-            else:
+            else:  # 进到右子树
                 return _predict_sample(node.right, x)
         return np.array([_predict_sample(self.root, x) for x in X])
-
-
-

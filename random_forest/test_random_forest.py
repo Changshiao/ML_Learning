@@ -1,7 +1,7 @@
 # test_decision_tree.py
 
 import numpy as np
-from decision_tree import DecisionTree
+from random_forest import Random_forest
 """
 样本集X
 第一个是喜欢吃甜食程度,与数字成线性正相关,约定3是正常值
@@ -20,7 +20,7 @@ X = np.array([[1, 0, 0],
 
 y = np.array([1, 1, 2, 3, 2, 2])
 
-tree_test = DecisionTree(max_depth=7)
+tree_test = Random_forest(num_tree=10, sample_size=3, max_depth=5)
 tree_test.fit(X, y)
 tree_test_predict = tree_test.predict(X)
 if np.array_equal(tree_test_predict, y):
